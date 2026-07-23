@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Secure Authenticator</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+        }
+        h1, h2 {
+            color: #222;
+        }
+        code {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .updated {
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+
+<p class="updated">
+Last Updated: July 23, 2026
+</p>
+
+<p>
+Secure Authenticator ("the Extension") respects your privacy. This Privacy Policy
+explains what information is handled by the extension and how it is protected.
+</p>
+
+<h2>Overview</h2>
+
+<p>
+Secure Authenticator is a browser extension for generating Time-based One-Time Passwords (TOTP)
+and HMAC-based One-Time Passwords (HOTP) for two-factor authentication (2FA).
+The extension is designed with a privacy-first approach and operates primarily on your device.
+</p>
+
+<h2>Information We Collect</h2>
+
+<p>
+We do <strong>not collect</strong> personal information such as:
+</p>
+
+<ul>
+    <li>Name</li>
+    <li>Email address</li>
+    <li>Phone number</li>
+    <li>Mailing address</li>
+    <li>Payment information</li>
+    <li>Location data</li>
+    <li>Browsing history</li>
+    <li>Analytics data</li>
+    <li>Advertising identifiers</li>
+</ul>
+
+<p>
+The extension stores only the authentication data that you voluntarily add,
+including OTP secrets and related account information. This information remains
+stored locally on your device.
+</p>
+
+<h2>How Your Data Is Stored</h2>
+
+<p>
+Authentication data is stored locally using the Chrome Extension Storage API.
+When enabled, your vault is encrypted using industry-standard
+<strong>AES-256-GCM</strong> encryption with keys derived using
+<strong>PBKDF2</strong>.
+</p>
+
+<p>
+Your authentication data is never uploaded to our servers because we do not operate
+any servers for storing user vaults.
+</p>
+
+<h2>Clipboard Access</h2>
+
+<p>
+The extension accesses the clipboard only when you explicitly perform actions such as:
+</p>
+
+<ul>
+    <li>Copying a generated OTP code.</li>
+    <li>Importing OTP accounts from clipboard content.</li>
+</ul>
+
+<p>
+If enabled, copied OTP codes may be automatically removed from the clipboard after
+a user-configurable timeout for additional security.
+</p>
+
+<h2>QR Code Import</h2>
+
+<p>
+When you choose to import an account from a QR code displayed on a webpage,
+the extension temporarily accesses the active tab solely to read and decode the QR code.
+No webpage content is collected, stored, or transmitted.
+</p>
+
+<h2>Notifications</h2>
+
+<p>
+Optional browser notifications are used only for user-requested reminders,
+such as OTP expiration alerts or automatic vault lock notifications.
+</p>
+
+<h2>Data Sharing</h2>
+
+<p>
+We do <strong>not</strong>:
+</p>
+
+<ul>
+    <li>Sell your data.</li>
+    <li>Share your data with advertisers.</li>
+    <li>Share your data with analytics providers.</li>
+    <li>Transfer your data to third parties.</li>
+    <li>Use your data for marketing.</li>
+</ul>
+
+<h2>Remote Code</h2>
+
+<p>
+The extension does not download or execute remote code.
+All functionality is packaged within the version submitted to the Chrome Web Store.
+</p>
+
+<h2>Data Security</h2>
+
+<p>
+We implement reasonable security measures to help protect your locally stored
+authentication data, including:
+</p>
+
+<ul>
+    <li>Local encrypted storage.</li>
+    <li>AES-256-GCM encryption.</li>
+    <li>PBKDF2 key derivation.</li>
+    <li>Optional master password protection.</li>
+    <li>Automatic vault locking.</li>
+    <li>Optional clipboard auto-clear.</li>
+</ul>
+
+<h2>Your Control</h2>
+
+<p>
+You remain in complete control of your authentication data.
+You may:
+</p>
+
+<ul>
+    <li>Add or delete accounts at any time.</li>
+    <li>Export your vault.</li>
+    <li>Delete your vault.</li>
+    <li>Uninstall the extension to remove its locally stored data.</li>
+</ul>
+
+<h2>Children's Privacy</h2>
+
+<p>
+The extension is not directed toward children under the age of 13 and does not knowingly collect personal information from children.
+</p>
+
+<h2>Changes to This Privacy Policy</h2>
+
+<p>
+We may update this Privacy Policy from time to time.
+Any updates will be reflected by revising the "Last Updated" date on this page.
+</p>
+
+<h2>Contact</h2>
+
+<p>
+If you have questions regarding this Privacy Policy, you may contact the developer through the contact information provided on the Chrome Web Store listing.
+</p>
+
+</body>
+</html>
